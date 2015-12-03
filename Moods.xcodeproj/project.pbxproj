@@ -12,6 +12,10 @@
 		F3D45F441C0FB4B3002F31A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D45F421C0FB4B3002F31A6 /* Main.storyboard */; };
 		F3D45F461C0FB4B3002F31A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D45F451C0FB4B3002F31A6 /* Assets.xcassets */; };
 		F3D45F491C0FB4B3002F31A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D45F471C0FB4B3002F31A6 /* LaunchScreen.storyboard */; };
+		F3D45F6A1C10027D002F31A6 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D45F661C10027D002F31A6 /* ManagedObject.swift */; };
+		F3D45F6B1C10027D002F31A6 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D45F671C10027D002F31A6 /* Mood.swift */; };
+		F3D45F6C1C10027D002F31A6 /* Moods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D45F681C10027D002F31A6 /* Moods.xcdatamodeld */; };
+		F3D45F6E1C100473002F31A6 /* MoodsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D45F6D1C100472002F31A6 /* MoodsStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F3D45F451C0FB4B3002F31A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D45F481C0FB4B3002F31A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3D45F4A1C0FB4B3002F31A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D45F661C10027D002F31A6 /* ManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
+		F3D45F671C10027D002F31A6 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		F3D45F691C10027D002F31A6 /* Mood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mood.xcdatamodel; sourceTree = "<group>"; };
+		F3D45F6D1C100472002F31A6 /* MoodsStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		F3D45F321C0FB4B3002F31A6 = {
 			isa = PBXGroup;
 			children = (
+				F3D45F651C10027D002F31A6 /* Model */,
 				F3D45F3D1C0FB4B3002F31A6 /* Moods */,
 				F3D45F3C1C0FB4B3002F31A6 /* Products */,
 			);
@@ -62,6 +71,18 @@
 				F3D45F4A1C0FB4B3002F31A6 /* Info.plist */,
 			);
 			path = Moods;
+			sourceTree = "<group>";
+		};
+		F3D45F651C10027D002F31A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3D45F661C10027D002F31A6 /* ManagedObject.swift */,
+				F3D45F671C10027D002F31A6 /* Mood.swift */,
+				F3D45F681C10027D002F31A6 /* Moods.xcdatamodeld */,
+				F3D45F6D1C100472002F31A6 /* MoodsStack.swift */,
+			);
+			name = Model;
+			path = Moods/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D45F6C1C10027D002F31A6 /* Moods.xcdatamodeld in Sources */,
+				F3D45F6E1C100473002F31A6 /* MoodsStack.swift in Sources */,
+				F3D45F6B1C10027D002F31A6 /* Mood.swift in Sources */,
 				F3D45F411C0FB4B3002F31A6 /* ViewController.swift in Sources */,
 				F3D45F3F1C0FB4B3002F31A6 /* AppDelegate.swift in Sources */,
+				F3D45F6A1C10027D002F31A6 /* ManagedObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +312,22 @@
 				F3D45F4F1C0FB4B3002F31A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3D45F681C10027D002F31A6 /* Moods.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3D45F691C10027D002F31A6 /* Mood.xcdatamodel */,
+			);
+			currentVersion = F3D45F691C10027D002F31A6 /* Mood.xcdatamodel */;
+			path = Moods.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F3D45F331C0FB4B3002F31A6 /* Project object */;
 }
