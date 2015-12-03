@@ -33,7 +33,7 @@ public func createMoodsMainContext() -> NSManagedObjectContext
    
    let psc = NSPersistentStoreCoordinator(managedObjectModel: model)
    
-   // if this throws an error, there's not feasible way to recover from this right now, so we can use try!
+   // if this throws an error, there's not feasible way to recover from it right now so we can use try!
    try! psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: _storeURL, options: nil)
    
    let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
